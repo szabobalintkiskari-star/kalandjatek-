@@ -1,0 +1,78 @@
+body {
+    background-image: url(kalandoska.jpg);
+
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Felső kép */
+.felso-kep {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeIn 0.6s ease-in-out;
+    border-radius: 10px;
+    border-width: 30px color white;
+}
+
+.kerdoiv {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.valasz-gomb {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.valasz-gomb:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+.valasz-gomb:active {
+    transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
